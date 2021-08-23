@@ -2,7 +2,9 @@ const canvas = document.getElementById("myCanvas");
 const context = canvas.getContext("2d");
 
 const icon = new Icon(50, 50);
-let score = 0;
+// let score = 0;
+// let cursorCost = 0;
+// let cursors = 0;
 
 function updateCanvas() {
   icon.draw();

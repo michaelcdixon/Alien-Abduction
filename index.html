@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="styles.css" />
 		<script src="icon.js" defer></script>
 		<script src="index.js" defer></script>
+		<script src="buttons.js" defer></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
@@ -21,7 +22,17 @@
 		/>
 	</head>
 	<body>
-		<p>Score: <span id="score">0</span></p>
-		<canvas id="myCanvas" width="240" height="240"></canvas>
-	</body>
+<p>Score: <span id="score">0</span></p>
+<canvas id="myCanvas" width="240" height="240"></canvas>
+	<button onclick="buyAbduction()">Auto abduction [<span id="abductionCost">10</span>] -- </span> <span id="abduction">0</span></button>
+	<button onclick="upgrade()"> Drones [<span id="droneCost">50</span>] -- </span> <span id="drone">0</span></button>
+	<button onclick="upgrade()"> Probing [<span id="probingCost">100</span>] -- </span> <span id="probing">0</span></button>
+	<button onclick="upgrade()"> Abduct Cows [<span id="cowCost">250</span>] -- </span> <span id="cow">0</span></button>
+	<button onclick="upgrade()"> Cloning [<span id="cloneCost">500</span>] -- </span> <span id="clone">0</span></button>
+	<button onclick="upgrade()"> Modify genes  [<span id="modifyCost">1000</span>] -- </span> <span id="modify">0</span></button>
+	<button onclick="upgrade()"> Assimilate [<span id="assimilateCost">5000</span>] -- </span> <span id="assim">0</span></button>
+	<button onclick="upgrade()"> create Portal to Mothership [<span id="portalCost">10,000</span>] -- </span> <span id="portal">0</span></button>
+	<button onclick="upgrade()"> Colonize [<span id="colonizeCost">50,000</span>] -- </span> <span id="colonize">0</span></button>
+	<button onclick="upgrade()"> Terraform [<span id="terraformCost">100,000</span>] -- </span> <span id="terraform">0</span></button>
+	
 </html>
