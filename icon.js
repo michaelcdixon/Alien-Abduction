@@ -6,7 +6,7 @@ class Icon {
 		this.height = 180;
 
 		const img = new Image();
-		img.src = "";
+		img.src = "/images/Alien-Icon.png";
 		this.image = img;
 	}
 

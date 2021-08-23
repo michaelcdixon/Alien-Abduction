@@ -4,3 +4,40 @@
 	-o-transform: scale(0.8);
 	transform: scale(0.8);
 }
+
+.display-right {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+}
+
+.row {
+	display: flex;
+}
+
+r-btn {
+	padding: 0;
+	margin: 0;
+	width: 30vw;
+	height: 45vh;
+	background-color: white;
+}
+
+.a-l {
+	text-align: left;
+	padding-left: 8%;
+	margin-right: 0;
+	white-space: nowrap;
+}
+
+.a-r {
+	text-align: right;
+	color: gray;
+	padding-right: 0%;
+	white-space: nowrap;
+}
+
+.title {
+	font-weight: 600;
+}

@@ -5,22 +5,109 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Alien Clicker</title>
+		<script src="icon.js" defer></script>
 		<script src="index.js" defer></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-			crossorigin="anonymous"
-		></script>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Bootstrap CSS-->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<p>Score: <span id="score">0</span></p>
-		<canvas id="#myCanvas" width="240" height="240"></canvas>
+		<div class="row">
+			<div class="col-4 display-left">
+				Abduct Human Column
+				<canvas id="myCanvas" width="240" height="240"></canvas>
+				<div>
+					<button class="upvote counter">
+						
+					</button>
+					<h3 class="rate"> 
+						<span class="aps"></span>" abductions per second"(APS)
+					</h3>
+				</div>
+				<div class="messages">
+					<div class="data-return">
+						<h2>Data Return</h2>
+					</div>
+					<div>
+						<p class="data">Wow who knew aliens like human flesh</p>
+					</div>
+				</div>
+		</div>
+			<div class="col-4 display-middle">
+				<h1>ABDUCT ALL HUMANS</h1>
+			</div>
+			<div class="col-4 display-right">
+				<button class="btn-top btn-icon-one row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l title">Upgrades</div>
+					<div class="col-5 a-r title">Cost</div>
+				</button>
+				<button class="btn-top btn-icon-one row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Auto Abduction</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-two row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Drones</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-three row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Probing</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-four row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Abduct Cow</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-five row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Cloning</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-six row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Gene Modification</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-seven row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Assimilation</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-eight row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Mothership Portal</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-nine row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Colonization</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-mid btn-icon-nine row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Colonization</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+				<button class="btn-bot btn-icon-ten row r-btn">
+					<div class="col-1"></div>
+					<div class="col-5 a-l">Human Extinction</div>
+					<div class="col-5 a-r">insert cost</div>
+				</button>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-4"></div>
+			</div>
+			<div class="col-4"></div>
+		</div>
 	</body>
 </html>

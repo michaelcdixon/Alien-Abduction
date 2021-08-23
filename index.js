@@ -1,5 +1,5 @@
 const canvas = document.getElementById("myCanvas");
-const context = canvas.getContent("2d");
+const context = canvas.getContext("2d");
 
 const icon = new Icon(50, 50);
 let score = 0;
