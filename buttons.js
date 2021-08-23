@@ -28,10 +28,10 @@ let portals = 0;
 let colonizeCost = 50000;
 let colonization = 0;
 //TERRAFORM 
-let terrafomrCost = 100000;
+let terraformCost = 100000;
 let terraformations = 0;
 
-//MAKING ABDUCTION BUTTON
+//MAKING ABDUCTION BUTTON WORK
 function buyAbduction() {
     if(score >= abductionCost) {
         score = score - abductionCost;
@@ -43,8 +43,8 @@ function buyAbduction() {
     }
 }
 
-//MAKING DRONES BUTTON   
-function upgrade() {
+//MAKING DRONES BUTTON WORK  
+function buyDrones() {
     if(score >= droneCost) {
         score = score - droneCost;
         drones = drones + 1
@@ -56,7 +56,7 @@ function upgrade() {
 }
 
 //MAKING PROBES BUTTON
-function upgrade() {
+function buyProbing() {
     if(score >= probingCost) {
         score = score - probingCost;
         probing = probing + 1
@@ -66,10 +66,10 @@ function upgrade() {
         document.getElementById("probing").innerHTML = probing;
     }
 }
-//MAKING COW BUTTON
-function upgrade() {
+//MAKING COW BUTTON WORK
+function buyCows() {
     if(score >= cowCost) {
-        score = score - probingCost;
+        score = score - cowCost;
         cow = cow + 1
         cowCost = Math.round(cowCost * 1.15);
         document.getElementById("score").innerHTML = score;
@@ -77,10 +77,128 @@ function upgrade() {
         document.getElementById("cow").innerHTML = cow;
     }
 }
+//MAKING CLONING BUTTON WORK
+function buyCloning() {
+    if(score >= cloningCost) {
+        score = score - cloningCost;
+        clones = clones + 1
+        cloningCost = Math.round(cloningCost * 1.15);
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("cloningCost").innerHTML =cloningCost;
+        document.getElementById("clone").innerHTML = clone;
+    }
+}
+//MAING MODIFY BUTTON WORK
+function buyModify() {
+    if(score >= modifyCost) {
+        score = score - modifyCost;
+        modifications = modifications + 1
+        modifyCost = Math.round(modifyCost * 1.15);
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("modifyCost").innerHTML =modifyCost;
+        document.getElementById("modify").innerHTML = modify;
+    }
+}
+//MAKING ASSIMILATE BUTTON WORK
+function buyAssimilate() {
+    if(score >= assimilateCost) {
+        score = score - assimilateCost;
+        assimilation = assimilation + 1
+        assimilateCost = Math.round(assimilateCost * 1.15);
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("assimilateCost").innerHTML = assimilateCost;
+        document.getElementById("assim").innerHTML = assimilation;
+    }
+}
+//MAKING PORTAL BUTTON WORK
+function buyPortal() {
+    if(score >= portalCost) {
+        score = score - portalCost;
+        portals = portals + 1
+        portalCost = Math.round(portalCost * 1.15);
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("portalCost").innerHTML =portalCost;
+        document.getElementById("portal").innerHTML = portals;
+    }
+}
+//MAKING COLONIZE BUTTON WORK
+function buyColonization() {
+    if(score >= colonizeCost) {
+        score = score - colonizeCost;
+        colonization =colonization + 1
+        colonizeCost = Math.round(colonizeCost * 1.15);
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("colonizeCost").innerHTML =colonizeCost;
+        document.getElementById("portal").innerHTML = colonization;
+    }
+}
+//MAKING TERRAFORM BUTTON WORK
+function buyTerraform() {
+    if(score >= terrafomrCost) {
+        score = score - terraformCost;
+        terraformations = terraformations + 1
+        terraformCost = Math.round(terraformCost * 1.15);
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("terraformCost").innerHTML =terraformCost;
+        document.getElementById("terraform").innerHTML = terraformations;
+    }
+}
 
-//SETTING INCREMENTAL POINTS
+//SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function() {
     score = score + abduction;
     document.getElementById("score").innerHTML = score;
 },1000);
 
+//MAKING INCREMENTAL POINTS FOR DRONES
+setInterval(function() {
+    score = score + drones;
+    document.getElementById("score").innerHTML = score;
+},1000);
+//MAING INCREMENTAL POINTS FOR PROBES
+setInterval(function() {
+    score = score + probing;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR COWS
+setInterval(function() {
+    score = score + cow;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR CLONING
+setInterval(function() {
+    score = score + clones;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR MODIFY
+setInterval(function() {
+    score = score + modifications;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR ASSIMILATE
+setInterval(function() {
+    score = score + assimilation;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR PORTAL
+setInterval(function() {
+    score = score + portals;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR COLONIZE
+setInterval(function() {
+    score = score + colonization;
+    document.getElementById("score").innerHTML = score;
+},1000);
+
+//MAKING INCREMENTAL POINTS FOR TERRAFORM
+setInterval(function() {
+    score = score +terraformations;
+    document.getElementById("score").innerHTML = score;
+},1000);

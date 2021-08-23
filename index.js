@@ -1,10 +1,9 @@
 const canvas = document.getElementById("myCanvas");
 const context = canvas.getContext("2d");
 
+// drawing the image
 const icon = new Icon(50, 50);
-// let score = 0;
-// let cursorCost = 0;
-// let cursors = 0;
+
 
 function updateCanvas() {
   icon.draw();
@@ -13,6 +12,8 @@ function updateCanvas() {
 
 updateCanvas();
 
+
+//MAKING CANVAS RECOGNIZE CLICK ON IMAGE
 canvas.addEventListener("click", (e) => {
   const coord = {
     x: e.clientX,

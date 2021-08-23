@@ -1,3 +1,4 @@
+//DRAWING THE IMAGE
 class Icon {
     constructor(x, y) {
         this.x = x;
