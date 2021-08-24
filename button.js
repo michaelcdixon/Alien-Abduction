@@ -28,9 +28,9 @@ let portals = 0;
 //COLONIZE
 let colonizeCost = 50000;
 let colonization = 0;
-//TERRAFORM
-let terraformCost = 100000;
-let terraformations = 0;
+//HARVEST
+let harvestCost = 100000;
+let harvests = 0;
 
 //MAKING ABDUCTION BUTTON WORK
 function buyAbduction() {
@@ -134,14 +134,14 @@ function buyColonization() {
 	}
 }
 //MAKING TERRAFORM BUTTON WORK
-function buyTerraform() {
-	if (score >= terrafomrCost) {
-		score = score - terraformCost;
-		terraformations = terraformations + 1;
-		terraformCost = Math.round(terraformCost * 1.15);
+function buyHarvest() {
+	if (score >= harvestCost) {
+		score = score - harvestCost;
+		harvests = harvests + 1;
+		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("terraformCost").innerHTML = terraformCost;
-		document.getElementById("terraform").innerHTML = terraformations;
+		document.getElementById("harvestCost").innerHTML = harvestCost;
+		document.getElementById("harvests").innerHTML = harvests;
 	}
 }
 
@@ -200,6 +200,6 @@ setInterval(function () {
 
 //MAKING INCREMENTAL POINTS FOR TERRAFORM
 setInterval(function () {
-	score = score + terraformations;
+	score = score + harvests;
 	document.getElementById("score").innerHTML = score;
 }, 1000);
