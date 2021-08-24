@@ -1,3 +1,5 @@
+//SCORE 
+let score = 0;
 //PRICE FOR UPGRADES
 //ABDUCTION
 let score = 0;
