@@ -19,20 +19,14 @@
 		/>
 	</head>
 	<body>
+		<video id="video" autoplay muted loop src="./images/space-background-vid.mp4" type="video/mp4">
+		</video>
 		<div class="row">
 			<div class="col-4 display-left">
 				<!--MAKING THE SCORE-->
-				<canvas id="myCanvas" width="240" height="240"></canvas>
+				<canvas id="myCanvas" width="500" height="500"></canvas>
 				<!-- Left Column with clickable alien, abducted humans and APS.-->
 				<p>Score: <span id="score">0</span></p>
-				<div>
-					<button class="abduction counter">
-						
-					</button>
-					<h3 class="rate"> 
-						<span class="aps"></span>" abductions per second"(APS)
-					</h3>
-				</div>
 				<div class="messages">
 					<div class="data-return">
 						<h2 id="quote">Data Return:</h2>
@@ -46,7 +40,9 @@
 					<img id="abductAllHumans" src="./images/abduct-all-humans-title.png" alt="Abduct All Humans" >
 					</a>
 					<!-- Middle column with spinning earth gif -->
-
+					<a href="#">
+						<img id="earthGif" src="./images/earth-spinning.gif" alt="Earth GIF">
+					</a>
 				</div>
 			<div class="col-4 display-right">
 				<button class="btn-top btn-icon-one row r-btn">

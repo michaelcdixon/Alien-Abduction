@@ -3,8 +3,8 @@ class Icon {
 	constructor(x, y) {
 		this.x = x;
 		this.y = y;
-		this.width = 180;
-		this.height = 180;
+		this.width = 400;
+		this.height = 400;
 
 		const img = new Image();
 		img.src = "/images/Alien-Icon.png";

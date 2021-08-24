@@ -2,9 +2,6 @@ const canvas = document.getElementById("myCanvas");
 const context = canvas.getContext("2d");
 const icon = new Icon(50, 50);
 
-
-
-
 function updateCanvas() {
 	icon.draw();
 	requestAnimationFrame(updateCanvas);
@@ -24,8 +21,7 @@ canvas.addEventListener("click", (e) => {
 		console.log("clicking icon");
 		score++;
 		scoreElement.innerHTML = score;
-	} 
-
+	}
 	// newQuote();
 });
 
