@@ -12,10 +12,6 @@
 	align-content: center;
 }
 
-.row {
-	display: flex;
-}
-
 r-btn {
 	padding: 0;
 	margin: 0;
@@ -26,8 +22,13 @@ r-btn {
 
 .a-l {
 	text-align: left;
-	padding-left: 8%;
 	margin-right: 0;
+	white-space: nowrap;
+}
+
+.a-m {
+	text-align: left;
+	margin-left: 0;
 	white-space: nowrap;
 }
 
