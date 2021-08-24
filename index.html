@@ -17,6 +17,23 @@
 		/>
 	</head>
 	<body>
+     <!--MAKING THE SCORE-->
+<p>Score: <span id="score">0</span></p>
+ <!--buttons -->
+<!--MAKING THE BUTTONS FOR THE UPGRADES-->
+<canvas id="myCanvas" width="240" height="240"></canvas>
+	<button onclick="buyAbduction()">Auto abduction [<span id="abductionCost">10</span>] -- </span> <span id="abduction">0</span></button>
+	<button onclick="buyDrones()"> Drones [<span id="droneCost">50</span>] -- </span> <span id="drone">0</span></button>
+	<button onclick="buyProbing()"> Probing [<span id="probingCost">100</span>] -- </span> <span id="probing">0</span></button>
+	<button onclick="buyCows()"> Abduct Cows [<span id="cowCost">250</span>] -- </span> <span id="cow">0</span></button>
+	<button onclick="buyCloning()"> Cloning [<span id="cloneCost">500</span>] -- </span> <span id="clone">0</span></button>
+	<button onclick="buyModify()"> Modify genes  [<span id="modifyCost">1000</span>] -- </span> <span id="modify">0</span></button>
+	<button onclick="buyAssimilate()"> Assimilate [<span id="assimilateCost">5000</span>] -- </span> <span id="assim">0</span></button>
+	<button onclick="buyPortal()"> create Portal to Mothership [<span id="portalCost">10,000</span>] -- </span> <span id="portal">0</span></button>
+	<button onclick="buyColonization()"> Colonize [<span id="colonizeCost">50,000</span>] -- </span> <span id="colonize">0</span></button>
+	<button onclick="buyTerraform()"> Terraform [<span id="terraformCost">100,000</span>] -- </span> <span id="terraform">0</span></button>
+	
+	  <!-- buttons-->
 		<div class="row">
 			<div class="col-4 display-left">
 				Abduct Human Column
