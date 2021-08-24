@@ -28,9 +28,9 @@ let portals = 0;
 //COLONIZE
 let colonizeCost = 50000;
 let colonization = 0;
-//HARVEST
+//TERRAFORM
 let harvestCost = 100000;
-let harvests = 0;
+let harvest = 0;
 
 //MAKING ABDUCTION BUTTON WORK
 function buyAbduction() {
@@ -133,29 +133,29 @@ function buyColonization() {
 		document.getElementById("colonize").innerHTML = colonization;
 	}
 }
-//MAKING HARVEST BUTTON WORK
+//MAKING TERRAFORM BUTTON WORK
 function buyHarvest() {
 	if (score >= harvestCost) {
 		score = score - harvestCost;
 		harvests = harvests + 1;
 		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("terraformCost").innerHTML = harvestCost;
-		document.getElementById("terraform").innerHTML = harvests;
+		document.getElementById("harvestCost").innerHTML = harvetCost;
+		document.getElementById("harvests").innerHTML = harvets;
 	}
 }
 
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
-	score = score + drones * 5;
-	score = score + probing * 15;
-	score = score + cow * 25;
-	score = score + clone * 35;
-	score = score + modify * 45;
+	score = score + drones * 3;
+	score = score + probing * 5;
+	score = score + cow * 8;
+	score = score + clone * 10;
+	score = score + modify * 25;
 	score = score + assimilation * 55;
-	score = score + portals * 65;
-	score = score + colonization * 95;
-	score = score + harvests * 200;
+	score = score + portals * 75;
+	score = score + colonization * 105;
+	score = score + harvest * 300;
 	document.getElementById("score").innerHTML = score;
 }, 500);
