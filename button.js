@@ -15,10 +15,10 @@ let cowCost = 250;
 let cow = 0;
 //CLONING
 let cloningCost = 500;
-let clones = 0;
+let clone = 0;
 //MODIFY
 let modifyCost = 1000;
-let modifications = 0;
+let modify = 0;
 //ASSIMILATE
 let assimilateCost = 5000;
 let assimilation = 0;
@@ -82,10 +82,10 @@ function buyCows() {
 function buyCloning() {
 	if (score >= cloningCost) {
 		score = score - cloningCost;
-		clones = clones + 1;
+		clone = clone + 1;
 		cloningCost = Math.round(cloningCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("cloningCost").innerHTML = cloningCost;
+		document.getElementById("cloneCost").innerHTML = cloningCost;
 		document.getElementById("clone").innerHTML = clone;
 	}
 }
@@ -93,7 +93,7 @@ function buyCloning() {
 function buyModify() {
 	if (score >= modifyCost) {
 		score = score - modifyCost;
-		modifications = modifications + 1;
+		modify = modify + 1;
 		modifyCost = Math.round(modifyCost * 1.15);
 		document.getElementById("score").innerHTML = score;
 		document.getElementById("modifyCost").innerHTML = modifyCost;
@@ -130,76 +130,32 @@ function buyColonization() {
 		colonizeCost = Math.round(colonizeCost * 1.15);
 		document.getElementById("score").innerHTML = score;
 		document.getElementById("colonizeCost").innerHTML = colonizeCost;
-		document.getElementById("portal").innerHTML = colonization;
+		document.getElementById("colonize").innerHTML = colonization;
 	}
 }
 //MAKING TERRAFORM BUTTON WORK
-function buyHarvest() {
-	if (score >= harvestCost) {
-		score = score - harvestCost;
-		harvests = harvests + 1;
-		harvestCost = Math.round(harvestCost * 1.15);
+function buyTerraform() {
+	if (score >= terraformCost) {
+		score = score - terraformCost;
+		terraformations = terraformations + 1;
+		terraformCost = Math.round(terraformCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("harvestCost").innerHTML = harvestCost;
-		document.getElementById("harvests").innerHTML = harvests;
+		document.getElementById("terraformCost").innerHTML = terraformCost;
+		document.getElementById("terraform").innerHTML = terraformations;
 	}
 }
 
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
+	score = score + drones * 5;
+	score = score + probing * 15;
+	score = score + cow * 25;
+	score = score + clone * 35;
+	score = score + modify * 45;
+	score = score + assimilation * 55;
+	score = score + portals * 65;
+	score = score + colonization * 95;
+	score = score + terraformations * 200;
 	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR DRONES
-setInterval(function () {
-	score = score + drones;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-//MAING INCREMENTAL POINTS FOR PROBES
-setInterval(function () {
-	score = score + probing;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR COWS
-setInterval(function () {
-	score = score + cow;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR CLONING
-setInterval(function () {
-	score = score + clones;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR MODIFY
-setInterval(function () {
-	score = score + modifications;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR ASSIMILATE
-setInterval(function () {
-	score = score + assimilation;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR PORTAL
-setInterval(function () {
-	score = score + portals;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR COLONIZE
-setInterval(function () {
-	score = score + colonization;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
-
-//MAKING INCREMENTAL POINTS FOR TERRAFORM
-setInterval(function () {
-	score = score + harvests;
-	document.getElementById("score").innerHTML = score;
-}, 1000);
+}, 500);
