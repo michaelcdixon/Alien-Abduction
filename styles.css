@@ -1,3 +1,11 @@
+/* GIF Background */
+body {
+	background-image: url("images/shooting\ star.gif");
+	background-size: cover;
+	background-color: #cccccc;
+}
+
+/* Alien Click Response Animation */
 #myCanvas:active {
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
@@ -5,6 +13,7 @@
 	transform: scale(0.8);
 }
 
+/* Purchase Upgrades Menu */
 .display-right {
 	display: flex;
 	justify-content: center;
@@ -13,33 +22,101 @@
 	align-items: stretch;
 }
 
-r-btn {
-	padding: 0;
-	margin: 0;
-	width: 30vw;
-	height: 45vh;
+/* Button Styling */
+
+/* this line does nothing */
+.btn-top {
+	align-items: center;
+	width: 32vw;
+	height: 8vh;
+}
+
+button.btn-top.btn-icon-one.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+button.btn-mid.btn-icon-two.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-three.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-four.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-five.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-six.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-seven.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-eight.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-mid.btn-icon-nine.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
+.btn-bot.btn-icon-ten.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+	/* padding-left: 15%; */
+}
+
+.btn-bot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.r-btn {
+	width: 32vw;
+	height: 7vh;
 	background-color: white;
 }
 
-.a-l {
-	text-align: left;
-	margin-right: 0;
-	white-space: nowrap;
+.col-5.a-l.text {
+	text-align: center;
+}
+.col-5.a-m {
+	text-align: end;
 }
 
-.a-m {
-	text-align: left;
-	margin-left: 0;
-	white-space: nowrap;
-}
-
-.a-r {
-	text-align: right;
-	color: gray;
-	padding-right: 0%;
-	white-space: nowrap;
-}
+/* .col-5 {
+	max-width: auto;
+} */
 
 .title {
 	font-weight: 600;
+}
+
+/* COST & AMOUNT STYLING */
+
+/* TITLE IMAGE */
+
+#abductAllHumans {
+	width: 400px;
+	height: 230px;
+	align-content: center;
+	justify-content: center;
+	align-items: stretch;
 }

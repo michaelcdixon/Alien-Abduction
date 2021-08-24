@@ -25,7 +25,7 @@
 				<!-- Left Column with clickable alien, abducted humans and APS.-->
 				<p>Score: <span id="score">0</span></p>
 				<div>
-					<button class="upvote counter">
+					<button class="abduction counter">
 						
 					</button>
 					<h3 class="rate"> 
@@ -36,14 +36,15 @@
 					<div class="data-return">
 						<h2>Data Return</h2>
 					</div>
-					<div>
-						<p class="data">Wow who knew aliens like human flesh</p>
-					</div>
 				</div>
 			</div>
 				<div class="col-4 display-middle">
+					<!-- Title Image -->
+					<a href="#">
+					<img id="abductAllHumans" src="./images/abduct-all-humans-title.png" alt="Abduct All Humans" >
+					</a>
 					<!-- Middle column with spinning earth gif -->
-					<h1>ABDUCT ALL HUMANS</h1>
+
 				</div>
 			<div class="col-4 display-right">
 				<button class="btn-top btn-icon-one row r-btn">
@@ -53,51 +54,84 @@
 					<div class="col-5 a-r title">Amount</div>
 				</button>
 				<!-- Abduction Button -->
-				<button class="btn-top btn-icon-one r-btn" onclick="buyAbduction()">
+				<button class="btn-top btn-icon-one row r-btn" onclick="buyAbduction()">
 					<div class="col-1"></div>
-					Auto Abduction <span id="abductionCost">&nbsp; 10</span><span id="abduction"> 0</span></button>
+					<div class="col-5 a-l text">Auto Abduction</div>
+					<div id="abductionCost" class="col-5 a-m ">10</div>
+					<div id="abduction" class="col-5 a-r">0</div>
+				</button>
 					<!-- Drones Button -->
-				<button class="btn-mid btn-icon-two r-btn" onclick="buyDrones()">
+				<button class="btn-mid btn-icon-two row r-btn" onclick="buyDrones()">
 					<div class="col-1"></div>
-					Drones <span id="droneCost">50</span><span id="drone">0</span></button>
+					<div class="col-5 a-l text">Drones</div>
+					<div id="droneCost" class="col-5 a-m">50</div>
+					<div id="drone" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-three r-btn" onclick="buyProbing()">
+				<!-- Probing Button -->
+				<button class="btn-mid btn-icon-three row r-btn" onclick="buyProbing()">
 					<div class="col-1"></div>
-					Probing <span id="probingCost">100</span><span id="probing">0</span></button>
+					<div class="col-5 a-l text">Probing</div>
+					<div id="probingCost" class="col-5 a-m">100</div>
+					<div id="probing" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-four r-btn" onclick="buyCows()">
+				<!-- Abduct Cows Button -->
+				<button class="btn-mid btn-icon-four row r-btn" onclick="buyCows()">
 					<div class="col-1"></div>
-					Abduct Cows <span id="cowCost">250</span><span id="cow">0</span></button>
+					<div class="col-5 a-l text">Abduct Cows</div>
+					<div id="cowCost" class="col-5 a-m">250</div>
+					<div id="cow" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-five r-btn" onclick="buyCloning()">
+				<!-- Cloning Button -->
+				<button class="btn-mid btn-icon-five row r-btn" onclick="buyCloning()">
 					<div class="col-1"></div>
-					Cloning <span id="cloneCost">500</span><span id="clone">0</span></button>
+					<div class="col-5 a-l text">Cloning</div>
+					<div id="cloneCost" class="col-5 a-m">500</div>
+					<div id="clone" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-six r-btn" onclick="buyModify()">
+				<!-- Gene Modification Button -->
+				<button class="btn-mid btn-icon-six row r-btn" onclick="buyModify()">
 					<div class="col-1"></div>
-					Modify genes  <span id="modifyCost">1000</span><span id="modify">0</span></button>
+					<div class="col-5 a-l text">Modify Genes</div>
+					<div id="modiyCost" class="col-5 a-m">1000</div>
+					<div id="modify" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-seven r-btn" onclick="buyAssimilate()">
+				<!-- Assimilation Button -->
+				<button class="btn-mid btn-icon-seven row r-btn" onclick="buyAssimilate()">
 					<div class="col-1"></div>
-					Assimilate <span id="assimilateCost">5000</span><span id="assim">0</span></button>
+					<div class="col-5 a-l text">Assimilate</div>
+					<div id="assimilateCost" class="col-5 a-m">5000</div>
+					<div id="assim" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-eight r-btn" onclick="buyPortal()">
+				<!-- Portal to Mothership Button -->
+				<button class="btn-mid btn-icon-eight row r-btn" onclick="buyPortal()">
 					<div class="col-1"></div>
-					create Portal to Mothership <span id="portalCost">10,000</span><span id="portal">0</span></button>
+					<div class="col-5 a-l text">Portal to Mothership</div>
+					<div id="portalCost" class="col-5 a-m">10,000</div>
+					<div id="portal" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-nine r-btn" onclick="buyColonization()">
+				<!-- Colonization Button -->
+				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyColonization()">
 					<div class="col-1"></div>
-					Colonize <span id="colonizeCost">50,000</span><span id="colonize">0</span></button>
+					<div class="col-5 a-l text">Colonize</div>
+					<div id="colonizeCost" class="col-5 a-m">50,000</div>
+					<div id="colonize" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-nine r-btn" onclick="buyHarvest()">
+				<!-- Harvest Button -->
+				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyHarvest()">
 					<div class="col-1"></div>
-					Harvest <span id="harvestCost">100,000</span><span id="harvests">0</span></button>
+					<div class="col-5 a-l text">Harvest</div>
+					<div id="harvestCost" class="col-5 a-m">100,000</div>
+					<div id="harvests" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-bot btn-icon-ten r-btn">
+				<!-- Human Extinction Button -->
+				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyExtinction()">
 					<div class="col-1"></div>
-					<div class="col-5 a-l">Human Extinction</div>
+					<div class="col-5 a-l text">Human Extinction</div>
+					<div id="humanExtinctionCost" class="col-5 a-m">1,000,000</div>
+					<div id="extinctions" class="col-5 a-r">0</div>
 				</button>
-			</div>
+			</button>
+		</div>
 	</div>
 </div>
 	</body>

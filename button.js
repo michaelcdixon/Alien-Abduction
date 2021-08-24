@@ -133,15 +133,15 @@ function buyColonization() {
 		document.getElementById("colonize").innerHTML = colonization;
 	}
 }
-//MAKING TERRAFORM BUTTON WORK
-function buyTerraform() {
-	if (score >= terraformCost) {
-		score = score - terraformCost;
-		terraformations = terraformations + 1;
-		terraformCost = Math.round(terraformCost * 1.15);
+//MAKING HARVEST BUTTON WORK
+function buyHarvest() {
+	if (score >= harvestCost) {
+		score = score - harvestCost;
+		harvests = harvests + 1;
+		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("terraformCost").innerHTML = terraformCost;
-		document.getElementById("terraform").innerHTML = terraformations;
+		document.getElementById("terraformCost").innerHTML = harvestCost;
+		document.getElementById("terraform").innerHTML = harvests;
 	}
 }
 
@@ -156,6 +156,6 @@ setInterval(function () {
 	score = score + assimilation * 55;
 	score = score + portals * 65;
 	score = score + colonization * 95;
-	score = score + terraformations * 200;
+	score = score + harvests * 200;
 	document.getElementById("score").innerHTML = score;
 }, 500);
