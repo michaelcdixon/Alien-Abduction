@@ -41,5 +41,7 @@ icon.onclick = function () {
 	scoreElement.innerHTML = score;
 };
 
+const audio = new Audio ("audio");
+audio.play();
 
 

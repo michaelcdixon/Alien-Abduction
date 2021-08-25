@@ -10,13 +10,13 @@
 
 /* Responsive Web Design */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 	.display-left,
 	.display-middle,
 	.display-right {
 		width: 100%;
 	}
-}
+} */
 
 /* TITLE IMAGE */
 
@@ -125,7 +125,7 @@ button.btn-mid.btn-icon-two.row.r-btn {
 }
 
 .r-btn {
-	width: 28vw;
+	width: 29vw;
 	height: 7.5vh;
 	background-color: #208642;
 }
@@ -187,4 +187,11 @@ p {
 	color: white;
 }
 
-/* Active Effects */
+body{
+	-webkit-user-select: none;        
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+
+    -o-user-select: none;
+    user-select: none;    
+}

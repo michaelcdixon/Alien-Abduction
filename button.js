@@ -159,3 +159,13 @@ setInterval(function () {
 	score = score + harvests * 150;
 	document.getElementById("score").innerHTML = score;
 }, 500);
+
+
+//BUTTON CLICK SOUND
+document.onclick = function() {
+	document.getElementById("buttonSound").addEventListener("click",function(){
+		document.getElementById("myAudio").play();
+}
+	) };
+	
+
