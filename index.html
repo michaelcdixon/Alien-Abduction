@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="col-4 display-left">
 				<!--MAKING THE SCORE-->
-				<canvas id="myCanvas" width="500" height="500"></canvas>
+				<canvas id="myCanvas" width="480" height="480"></canvas>
 				<!-- Left Column with clickable alien, abducted humans and APS.-->
 				<p>Score: <span id="score">0</span></p>
 				<div class="messages">
@@ -47,7 +47,7 @@
 				</div>
 				<audio src="/sounds/mixkit-on-or-off-light-switch-tap-2585.wav" id="myAudio"></audio>
 			<div class="col-4 display-right">
-				<button class="btn-top btn-icon-one row r-btn">
+				<button class="btn-top btn-icon-zero row r-btn">
 					<div class="col-1"></div>
 					<div class="col-5 a-l title">Upgrades</div>
 					<div class="col-5 a-m title">Cost</div>
@@ -117,19 +117,18 @@
 					<div id="colonizeCost" class="col-5 a-m">50,000</div>
 					<div id="colonize" class="col-5 a-r">0</div>
 				</button>
-				<!-- Harvest Button -->
-				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyHarvest()">
+				<button class="btn-mid btn-icon-eight row r-btn" onclick="buyHarvest()">
 					<div class="col-1"></div>
 					<div class="col-5 a-l text">Harvest</div>
-					<div id="harvestCost" class="col-5 a-m">100,000</div>
-					<div id="harvests" class="col-5 a-r">0</div>
+					<div class="col-5 a-m">100,000</div>
+					<div class="col-5 a-r">0</div>
 				</button>
 				<!-- Human Extinction Button -->
 				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyExtinction()">
 					<div class="col-1"></div>
 					<div class="col-5 a-l text">Human Extinction</div>
-					<div id="humanExtinctionCost" class="col-5 a-m">1,000,000</div>
-					<div id="extinctions" class="col-5 a-r">0</div>
+					<div class="col-5 a-m">1,000,000</div>
+					<div class="col-5 a-r">0</div>
 				</button>
 			</div>
 		</div>
