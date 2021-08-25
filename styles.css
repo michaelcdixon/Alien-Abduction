@@ -8,14 +8,11 @@
 	min-height: 100%;
 }
 
-/* Responsive Web Design */
+/* Earth GIF */
 
-@media screen and (max-width: 800px) {
-	.display-left,
-	.display-middle,
-	.display-right {
-		width: 100%;
-	}
+/* earthGif needs to be centered but is not */
+#earthGif {
+	padding-right: 500px;
 }
 
 /* TITLE IMAGE */
@@ -46,6 +43,96 @@
 	padding-top: 25px;
 }
 
+/* Button Icons */
+
+.btn-icon-one {
+	background-image: url(./images/abduction.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-two {
+	background-image: url(./images/drone.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-three {
+	background-image: url(./images/probing.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-four {
+	background-image: url(./images/ufo-and-cow.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-five {
+	background-image: url(./images/cloning.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-six {
+	background-image: url(./images/gene\ modification.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-seven {
+	background-image: url(./images/assimilation.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-eight {
+	background-image: url(./images/portal.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-nine {
+	background-image: url(./images/space-colonization.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-ten {
+	background-image: url(./images/harvest.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
+.btn-icon-eleven {
+	background-image: url(./images/human-extinction.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
+
 /* Button Styling/Effects */
 
 button {
@@ -66,6 +153,11 @@ button:hover {
 .btn-mid {
 	border-radius: 20px;
 	border: solid 0.2px;
+}
+
+button.btn-top.btn-icon-none.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
 }
 
 button.btn-top.btn-icon-one.row.r-btn {
@@ -118,6 +210,11 @@ button.btn-mid.btn-icon-two.row.r-btn {
 	padding-right: 25%;
 }
 
+.btn-bot.btn-icon-eleven.row.r-btn {
+	flex-wrap: nowrap;
+	padding-right: 25%;
+}
+
 .btn-bot {
 	display: flex;
 	justify-content: center;
@@ -138,6 +235,10 @@ button.btn-mid.btn-icon-two.row.r-btn {
 	text-align: center;
 }
 
+.col-5.a-r {
+	text-align: center;
+}
+
 #portalCost {
 	text-indent: 8px;
 }
@@ -147,11 +248,13 @@ button.btn-mid.btn-icon-two.row.r-btn {
 }
 
 #harvestCost {
-	text-indent: 14px;
+	text-indent: -28px;
+	text-align: left;
 }
 
 #humanExtinctionCost {
-	text-indent: 20px;
+	text-indent: 13px;
+	text-align: left;
 }
 
 .title {
@@ -163,12 +266,14 @@ button.btn-mid.btn-icon-two.row.r-btn {
 .messages {
 	height: 100px;
 	border: 2px solid rgb(255, 255, 255);
+	border-radius: 50px;
 }
 
 #quote {
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 	color: white;
+	font-family: squarefont;
 }
 
 #quote-text {
@@ -181,10 +286,16 @@ button.btn-mid.btn-icon-two.row.r-btn {
 p {
 	text-align: center;
 	color: white;
+	font-size: 25px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 }
 
 #score {
 	color: white;
+	font-size: 25px;
+	font-family: squarefont, "Trebuchet MS", "Lucida Sans Unicode",
+		"Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* Active Effects */

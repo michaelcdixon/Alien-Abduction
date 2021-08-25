@@ -6,7 +6,8 @@ const quotes = [
 	`"That… could have gone better."`,
 	`"Ripley, what are you doing?"`,
 	`"It's just a flesh wound."`,
-	`"One alien is a curiosity, Two are an invasion.```,
+	`"One alien is a curiosity, Two are an invasion.`,
+	`Alien: Peeeeeeeace? No peeeeeeeace.`,
 ];
 
 function newQuote() {
