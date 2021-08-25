@@ -65,12 +65,13 @@ function saveGame() {
 function loadGame() {
   const savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.score !== "undefined") score = savedGame.score;
-  document.getElementById("abduction").innerHTML = savedGame.score;
+  document.getElementById("score").innerHTML = savedGame.score;
+
   if (typeof savedGame.score !== "undefined") abduction = savedGame.abduction;
   document.getElementById("abduction").innerHTML = savedGame.abduction;
  
   if (typeof savedGame.score !== "undefined") drones = savedGame.drones;
-
+  document.getElementById("drone").innerHTML = savedGame.drones;
   if (typeof savedGame.score !== "undefined") probing = savedGame.probing;
 
   if (typeof savedGame.score !== "undefined") cow = savedGame.cow;
@@ -93,7 +94,7 @@ function loadGame() {
  console.log( savedGame.abduction);
 }
 
-setInterval(saveGame, 500);
+setInterval(saveGame, 200);
 
 window.onload = function () {
 	loadGame();
