@@ -8,6 +8,15 @@
 	min-height: 100%;
 }
 
+/* No Selector on click */
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
 /* Earth GIF */
 /* earthGif needs to be centered but is not - the code below does not work as intended */
 #earthGif {
@@ -289,13 +298,4 @@ p {
 	font-size: 25px;
 	font-family: squarefont, "Trebuchet MS", "Lucida Sans Unicode",
 		"Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-* {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-
-	-o-user-select: none;
-	user-select: none;
 }
