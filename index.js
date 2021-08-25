@@ -40,3 +40,7 @@ icon.onclick = function () {
 	score++;
 	scoreElement.innerHTML = score;
 };
+
+function abductionCounter() {
+	
+} 
