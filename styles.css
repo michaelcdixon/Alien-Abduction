@@ -1,5 +1,5 @@
 /* GIF Background */
-
+​
 #video {
 	position: fixed;
 	right: 0;
@@ -7,15 +7,24 @@
 	min-width: 100%;
 	min-height: 100%;
 }
-
+​
+/* No Selector on click */
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+​
 /* Earth GIF */
 /* earthGif needs to be centered but is not - the code below does not work as intended */
 #earthGif {
 	padding-left: -25%;
 }
-
+​
 /* TITLE IMAGE */
-
+​
 #abductAllHumans {
 	width: 380px;
 	height: 230px;
@@ -23,7 +32,7 @@
 	justify-content: center;
 	align-items: stretch;
 }
-
+​
 /* Alien Click Response Animation */
 #myCanvas:active {
 	-webkit-transform: scale(0.8);
@@ -31,7 +40,7 @@
 	-o-transform: scale(0.8);
 	transform: scale(0.8);
 }
-
+​
 /* Purchase Upgrades Menu */
 .display-right {
 	display: flex;
@@ -43,9 +52,9 @@
 	font-family: squarefont;
 	font-size: 16px;
 }
-
+​
 /* Button Icons */
-
+​
 .btn-icon-zero {
 	background-image: url(./images/alien-head.svg);
 	background-size: 8%;
@@ -53,7 +62,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-one {
 	background-image: url(./images/abduction.svg);
 	background-size: 8%;
@@ -61,7 +70,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-two {
 	background-image: url(./images/drone.svg);
 	background-size: 8%;
@@ -69,7 +78,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-three {
 	background-image: url(./images/probing.svg);
 	background-size: 8%;
@@ -77,7 +86,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-four {
 	background-image: url(./images/ufo-and-cow.svg);
 	background-size: 8%;
@@ -85,7 +94,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-five {
 	background-image: url(./images/cloning.svg);
 	background-size: 8%;
@@ -93,7 +102,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-six {
 	background-image: url(./images/gene\ modification.svg);
 	background-size: 8%;
@@ -101,7 +110,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-seven {
 	background-image: url(./images/assimilation.svg);
 	background-size: 8%;
@@ -109,7 +118,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-eight {
 	background-image: url(./images/portal.svg);
 	background-size: 8%;
@@ -117,7 +126,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-nine {
 	background-image: url(./images/space-colonization.svg);
 	background-size: 8%;
@@ -125,7 +134,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-ten {
 	background-image: url(./images/harvest.svg);
 	background-size: 8%;
@@ -133,7 +142,7 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 .btn-icon-eleven {
 	background-image: url(./images/human-extinction.svg);
 	background-size: 8%;
@@ -141,141 +150,141 @@
 	background-position: center;
 	background-position-x: 4%;
 }
-
+​
 /* Button Styling/Effects */
-
+​
 button {
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
-
+​
 button:hover {
 	background-color: #bdfd46;
 	box-shadow: 0px 0px 4px 4px rgb(90, 228, 159);
 }
-
+​
 .btn-top {
 	border-radius: 20px;
 	border: solid 0.2px;
 }
-
+​
 .btn-mid {
 	border-radius: 20px;
 	border: solid 0.2px;
 }
-
+​
 button.btn-top.btn-icon-zero.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 button.btn-top.btn-icon-one.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 button.btn-mid.btn-icon-two.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-three.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-four.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-five.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-six.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-seven.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-eight.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-mid.btn-icon-nine.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-bot.btn-icon-ten.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-bot.btn-icon-eleven.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
-
+​
 .btn-bot {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+​
 .r-btn {
 	width: 29vw;
 	height: 7.5vh;
 	background-color: #208642;
 }
-
+​
 .col-5.a-l.text {
 	text-align: center;
 	align-content: center;
 }
-
+​
 .col-5.a-m {
 	text-align: center;
 }
-
+​
 .col-5.a-r {
 	text-align: center;
 }
-
+​
 .title {
 	font-weight: 600;
 }
-
+​
 /* Data Return and Quotes Box */
-
+​
 .messages {
 	margin-left: 20px;
 	height: 125px;
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 50px;
 }
-
+​
 #quote {
 	font-size: 25px;
 	text-align: center;
 	color: white;
 	font-family: squarefont;
 }
-
+​
 #quote-text {
 	font-size: 18px;
 	text-align: center;
 	align-content: center;
 	color: white;
 }
-
+​
 p {
 	text-align: center;
 	color: white;
@@ -283,19 +292,10 @@ p {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
-
+​
 #score {
 	color: white;
 	font-size: 25px;
 	font-family: squarefont, "Trebuchet MS", "Lucida Sans Unicode",
 		"Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-* {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-
-	-o-user-select: none;
-	user-select: none;
 }
