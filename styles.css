@@ -9,10 +9,9 @@
 }
 
 /* Earth GIF */
-
-/* earthGif needs to be centered but is not */
+/* earthGif needs to be centered but is not - the code below does not work as intended */
 #earthGif {
-	padding-right: 500px;
+	padding-left: -25%;
 }
 
 /* TITLE IMAGE */
@@ -41,9 +40,19 @@
 	align-content: center;
 	align-items: stretch;
 	padding-top: 25px;
+	font-family: squarefont;
+	font-size: 16px;
 }
 
 /* Button Icons */
+
+.btn-icon-zero {
+	background-image: url(./images/alien-head.svg);
+	background-size: 8%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 4%;
+}
 
 .btn-icon-one {
 	background-image: url(./images/abduction.svg);
@@ -155,7 +164,7 @@ button:hover {
 	border: solid 0.2px;
 }
 
-button.btn-top.btn-icon-none.row.r-btn {
+button.btn-top.btn-icon-zero.row.r-btn {
 	flex-wrap: nowrap;
 	padding-right: 25%;
 }
@@ -229,6 +238,7 @@ button.btn-mid.btn-icon-two.row.r-btn {
 
 .col-5.a-l.text {
 	text-align: center;
+	align-content: center;
 }
 
 .col-5.a-m {
@@ -239,24 +249,6 @@ button.btn-mid.btn-icon-two.row.r-btn {
 	text-align: center;
 }
 
-#portalCost {
-	text-indent: 8px;
-}
-
-#colonizeCost {
-	text-indent: 9px;
-}
-
-#harvestCost {
-	text-indent: -28px;
-	text-align: left;
-}
-
-#humanExtinctionCost {
-	text-indent: 13px;
-	text-align: left;
-}
-
 .title {
 	font-weight: 600;
 }
@@ -264,7 +256,8 @@ button.btn-mid.btn-icon-two.row.r-btn {
 /* Data Return and Quotes Box */
 
 .messages {
-	height: 100px;
+	margin-left: 20px;
+	height: 125px;
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 50px;
 }
@@ -277,7 +270,7 @@ button.btn-mid.btn-icon-two.row.r-btn {
 }
 
 #quote-text {
-	font-size: 15px;
+	font-size: 18px;
 	text-align: center;
 	align-content: center;
 	color: white;
@@ -298,11 +291,11 @@ p {
 		"Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-body{
-	-webkit-user-select: none;        
-    -moz-user-select: none; 
-    -ms-user-select: none; 
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 
-    -o-user-select: none;
-    user-select: none;    
+	-o-user-select: none;
+	user-select: none;
 }
