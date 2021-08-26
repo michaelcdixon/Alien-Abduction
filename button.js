@@ -144,7 +144,7 @@ function buyHarvest() {
 		harvests = harvests = 1;
 		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("havestCost").innerHTML = harvestCost;
+		document.getElementById("harvestCost").innerHTML = harvestCost;
 		document.getElementById("harvests").innerHTML = harvests;
 	}
 }
