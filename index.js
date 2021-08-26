@@ -2,17 +2,16 @@ const canvas = document.getElementById("myCanvas");
 const context = canvas.getContext("2d");
 const icon = new Icon(50, 50);
 
-document.querySelector('.gameover').style.display = 'none';
+document.querySelector(".gameover").style.display = "none";
 
-window.onload = ()=> {
-	console.log('page loaded');
-	start()
+window.onload = () => {
+	console.log("page loaded");
+	start();
 };
 
 function updateCanvas() {
-	icon.draw(); 
+	icon.draw();
 	requestAnimationFrame(updateCanvas);
-	
 }
 
 updateCanvas();
@@ -51,31 +50,28 @@ icon.onclick = function () {
 	console.log(score);
 };
 
-
 //MAKING ELAPSED TIME
 let startTime;
 let endTime;
 let duration;
 
 function start() {
-
-  startTime = new Date();
-  console.log(startTime);
-};
-
-function end() {
-  endTime = new Date();
-  const timeDiff = endTime - startTime; //in ms
-  // strip the ms
-  const secondsDiff= timeDiff / 1000;
-  const minutesDiff= timeDiff / 60000;
-
-  // get seconds 
-  const seconds = Math.round(secondsDiff);
-  const minutes = Math.round(minutesDiff);
-  console.log(seconds + " seconds");
-  duration = `${minutes}M : ${seconds}S`;
-
-  document.querySelector("#total-time").innerHTML = `${duration}`;
+	startTime = new Date();
+	console.log(startTime);
 }
 
+function end() {
+	endTime = new Date();
+	const timeDiff = endTime - startTime; //in ms
+	// strip the ms
+	const secondsDiff = timeDiff / 1000;
+	const minutesDiff = timeDiff / 60000;
+
+	// get seconds
+	const seconds = Math.round(secondsDiff);
+	const minutes = Math.round(minutesDiff);
+	console.log(seconds + " seconds");
+	duration = `${minutes}M : ${seconds}S`;
+
+	document.querySelector("#total-time").innerHTML = `${duration}`;
+}

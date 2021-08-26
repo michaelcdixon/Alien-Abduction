@@ -139,21 +139,21 @@ function buyColonization() {
 }
 //MAKING harvest BUTTON WORK
 function buyHarvest() {
-	if(score >= harvestCost) {
+	if (score >= harvestCost) {
 		score = score - harvestCost;
 		harvests = harvests = 1;
 		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
 		document.getElementById("havestCost").innerHTML = harvestCost;
-		document.getElementById("harvests").innerHTML = harvests
+		document.getElementById("harvests").innerHTML = harvests;
 	}
 }
 //MAKING EXTINCTION BUTTON WORK
 function buyExtinction() {
-	if(score >= extinctionCost) {	
+	if (score >= extinctionCost) {
 		end();
-		document.querySelector('.gameover').style.display = 'block';
-		document.querySelector('.game-on').style.display = 'none';	
+		document.querySelector(".gameover").style.display = "block";
+		document.querySelector(".game-on").style.display = "none";
 	}
 }
 
@@ -163,7 +163,7 @@ function buyExtinction() {
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
-	score = score + drones * 1000000;
+	score = score + drones * 2;
 	score = score + probing * 3;
 	score = score + cow * 5;
 	score = score + clone * 8;
@@ -175,19 +175,11 @@ setInterval(function () {
 	document.getElementById("score").innerHTML = score;
 }, 500);
 
-
 //BUTTON CLICK SOUND
-document.onclick = function() {
-	document.getElementById("buttonSound").addEventListener("click",function(){
-		document.getElementById("myAudio").play();
-
-}  
-	) };
-
-
-
-	
-	
-
-
-
+document.onclick = function () {
+	document
+		.getElementById("buttonSound")
+		.addEventListener("click", function () {
+			document.getElementById("myAudio").play();
+		});
+};
