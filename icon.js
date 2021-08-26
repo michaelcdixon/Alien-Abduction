@@ -1,4 +1,4 @@
-// Drawing Alien Image
+/// Drawing Alien Image
 class Icon {
 	constructor(x, y) {
 		this.x = x;

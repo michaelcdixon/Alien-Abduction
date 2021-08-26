@@ -19,10 +19,13 @@
 		/>
 	</head>
 	<body>
+		
+	<div class="game-on">
+		
+		
 		<video id="video" autoplay muted loop src="./images/space-background-vid.mp4" type="video/mp4">
 		</video>
-		<audio controls id="myAudio" autoplay loop  src="./sounds/The-X-Files-theme.mp3"></audio>
-		
+        
 		<div class="row">
 			<div class="col-4 display-left">
 				<!--MAKING THE SCORE-->
@@ -39,7 +42,7 @@
 				<div class="col-4 display-middle">
 					<!-- Title Image -->
 					<a href="#">
-					<img id="abductAllHumans" src="./images/abduct-all-humans-title.png" alt="Abduct All Humans" >
+						<img id="abductAllHumans" src="./images/abduct-all-humans-title.png" alt="Abduct All Humans" >
 					</a>
 					<!-- Middle column with spinning earth gif -->
 					<a href="#">
@@ -47,28 +50,28 @@
 					</a>
 				</div>
 				<audio src="/sounds/mixkit-on-or-off-light-switch-tap-2585.wav" id="myAudio"></audio>
-			<div class="col-4 display-right">
-				<button class="btn-top btn-icon-zero row r-btn">
-					<div class="col-1"></div>
-					<div class="col-5 a-l title">Upgrades</div>
-					<div class="col-5 a-m title">Cost</div>
-					<div class="col-5 a-r title">Amount</div>
-				</button>
-				<div id="buttonSound">
-				<!-- Abduction Button -->
-				<button class="btn-top btn-icon-one row r-btn" onclick="buyAbduction()">
-					<div class="col-1"></div>
-					<div class="col-5 a-l text">Auto Abduction</div>
-					<div id="abductionCost" class="col-5 a-m ">10</div>
-					<div id="abduction" class="col-5 a-r">0</div>
-				</button>
-					<!-- Drones Button -->
-				<button class="btn-mid btn-icon-two row r-btn" onclick="buyDrones()">
-					<div class="col-1"></div>
-					<div class="col-5 a-l text">Drones</div>
-					<div id="droneCost" class="col-5 a-m">50</div>
-					<div id="drone" class="col-5 a-r">0</div>
-				</button>
+				<div class="col-4 display-right">
+					<button class="btn-top btn-icon-zero row r-btn">
+						<div class="col-1"></div>
+						<div class="col-5 a-l title">Upgrades</div>
+						<div class="col-5 a-m title">Cost</div>
+						<div class="col-5 a-r title">Amount</div>
+					</button>
+					<div id="buttonSound">
+						<!-- Abduction Button -->
+						<button class="btn-top btn-icon-one row r-btn" onclick="buyAbduction()">
+							<div class="col-1"></div>
+							<div class="col-5 a-l text">Auto Abduction</div>
+							<div id="abductionCost" class="col-5 a-m ">10</div>
+							<div id="abduction" class="col-5 a-r">0</div>
+						</button>
+						<!-- Drones Button -->
+						<button class="btn-mid btn-icon-two row r-btn" onclick="buyDrones()">
+							<div class="col-1"></div>
+							<div class="col-5 a-l text">Drones</div>
+							<div id="droneCost" class="col-5 a-m">50</div>
+							<div id="drone" class="col-5 a-r">0</div>
+						</button>
 				<!-- Probing Button -->
 				<button class="btn-mid btn-icon-three row r-btn" id="probingAudio" onclick="buyProbing()">
 					<div class="col-1"></div>
@@ -118,20 +121,41 @@
 					<div id="colonizeCost" class="col-5 a-m">50,000</div>
 					<div id="colonize" class="col-5 a-r">0</div>
 				</button>
+				<!--Harvest Button-->
 				<button class="btn-mid btn-icon-eight row r-btn" onclick="buyHarvest()">
 					<div class="col-1"></div>
 					<div class="col-5 a-l text">Harvest</div>
-					<div class="col-5 a-m">100,000</div>
-					<div class="col-5 a-r">0</div>
+					<div  id="havestCost" class="col-5 a-m">100,000</div>
+					<div id="harvests" class="col-5 a-r">0</div>
 				</button>
 				<!-- Human Extinction Button -->
-				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyExtinction()">
-					<div class="col-1"></div>
-					<div class="col-5 a-l text">Human Extinction</div>
-					<div class="col-5 a-m">1,000,000</div>
-					<div class="col-5 a-r">0</div>
-				</button>
+				
+					<button type="submit" class="btn-mid btn-icon-nine row r-btn" onclick="buyExtinction()">
+						<div class="col-1"></div>
+						<div class="col-5 a-l text">Human Extinction</div>
+						<div  id="extinctionCost" class="col-5 a-m">1,000,000</div>
+						<div class="col-5 a-r">0</div>
+					</button>
+				
 			</div>
 		</div>
-   </body>
-</html>
+	</div>
+	
+</div>
+
+<div id="gameOverBox">
+<div class="gameover">
+	<p>GAME</p>
+		<p>OVER</p>
+	 </div>
+	 <div class=“yourtime”>
+		<p>You caused human extinction in (insert time here)</p>
+	 </div>
+	 <div class=“restart”>
+		<p>RESTART?</p>
+	 </div>
+	</div>
+
+
+</body>
+	</html>

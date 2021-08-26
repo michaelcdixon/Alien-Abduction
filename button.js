@@ -1,5 +1,7 @@
 //SCORE
 let score = 0;
+//GAME OVER
+
 //PRICE FOR UPGRADES
 //ABDUCTION
 let abductionCost = 10;
@@ -28,9 +30,11 @@ let portals = 0;
 //COLONIZE
 let colonizeCost = 50000;
 let colonization = 0;
-//TERRAFORM
+//HARVEST
 let harvestCost = 100000;
 let harvests = 0;
+//EXTINCTION
+let extinctionCost = 1000000;
 
 //MAKING ABDUCTION BUTTON WORK
 function buyAbduction() {
@@ -135,20 +139,33 @@ function buyColonization() {
 }
 //MAKING harvest BUTTON WORK
 function buyHarvest() {
-	if (score >= harvestCost) {
+	if(score >= harvestCost) {
 		score = score - harvestCost;
-		harvests = harvests + 1;
+		harvests = harvests = 1;
 		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
-		document.getElementById("harvestCost").innerHTML = harvestCost;
-		document.getElementById("harvests").innerHTML = harvests;
+		document.getElementById("havestCost").innerHTML = harvestCost;
+		document.getElementById("harvests").innerHTML = harvests
+	}
+}
+//MAKING EXTINCTION BUTTON WORK
+function buyExtinction() {
+	if(score >= extinctionCost) {	
+	/* 	score = score - extinctionCost;
+		document.getElementById("score").innerHTML = score;
+		document.getElementById("extinctionCost").innerHTML = extinctionCost;	 */
+		document.querySelector('.gameover').style.display = 'block';
+		document.querySelector('.game-on').style.display = 'none';	
 	}
 }
 
+/*  else {
+	alert('You ar not there yet!')
+} */
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
-	score = score + drones * 2;
+	score = score + drones * 990000;
 	score = score + probing * 3;
 	score = score + cow * 5;
 	score = score + clone * 8;
@@ -165,7 +182,14 @@ setInterval(function () {
 document.onclick = function() {
 	document.getElementById("buttonSound").addEventListener("click",function(){
 		document.getElementById("myAudio").play();
-}
+
+}  
 	) };
+
+
+
 	
+	
+
+
 
