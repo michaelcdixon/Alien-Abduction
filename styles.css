@@ -1,3 +1,7 @@
+@font-face {
+	font-family: “squarefont”;
+	src: url(“https://www.dafont.com/squarefont.font”);
+ }
 /* GIF Background */
 
 #video {
@@ -293,7 +297,7 @@ p {
 	text-align: center;
 	color: white;
 	font-size: 25px;
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+	font-family: squarefont, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
 
