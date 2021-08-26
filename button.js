@@ -151,9 +151,6 @@ function buyHarvest() {
 //MAKING EXTINCTION BUTTON WORK
 function buyExtinction() {
 	if(score >= extinctionCost) {	
-	/* 	score = score - extinctionCost;
-		document.getElementById("score").innerHTML = score;
-		document.getElementById("extinctionCost").innerHTML = extinctionCost;	 */
 		document.querySelector('.gameover').style.display = 'block';
 		document.querySelector('.game-on').style.display = 'none';	
 	}

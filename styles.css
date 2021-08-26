@@ -8,10 +8,13 @@
 	min-height: 100%;
 }
 
-/* Earth GIF */
-/* earthGif needs to be centered but is not - the code below does not work as intended */
-#earthGif {
-	padding-left: -25%;
+/* No Selector on click */
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 /* TITLE IMAGE */
@@ -19,9 +22,10 @@
 #abductAllHumans {
 	width: 380px;
 	height: 230px;
-	align-content: center;
+	margin-left: 80px;
+	/* align-content: center;
 	justify-content: center;
-	align-items: stretch;
+	align-items: stretch; */
 }
 
 /* Alien Click Response Animation */
@@ -39,12 +43,18 @@
 	flex-direction: column;
 	align-content: center;
 	align-items: stretch;
-	padding-top: 25px;
+	padding-top: 30px;
+	margin-left: 80px;
 	font-family: squarefont;
 	font-size: 16px;
 }
 
 /* Button Icons */
+
+.row {
+	flex-wrap: nowrap !important;
+	padding-right: 106px;
+}
 
 .btn-icon-zero {
 	background-image: url(./images/alien-head.svg);
@@ -147,6 +157,10 @@
 button {
 	transition-duration: 0.4s;
 	cursor: pointer;
+}
+
+button:focus {
+	outline: 0 !important;
 }
 
 button:hover {
@@ -252,12 +266,11 @@ button.btn-mid.btn-icon-two.row.r-btn {
 .title {
 	font-weight: 600;
 }
-
 /* Data Return and Quotes Box */
 
 .messages {
 	margin-left: 20px;
-	height: 125px;
+	height: 140px;
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 50px;
 }
