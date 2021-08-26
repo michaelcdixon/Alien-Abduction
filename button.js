@@ -151,6 +151,7 @@ function buyHarvest() {
 //MAKING EXTINCTION BUTTON WORK
 function buyExtinction() {
 	if(score >= extinctionCost) {	
+		end();
 		document.querySelector('.gameover').style.display = 'block';
 		document.querySelector('.game-on').style.display = 'none';	
 	}
@@ -162,7 +163,7 @@ function buyExtinction() {
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
-	score = score + drones * 990000;
+	score = score + drones * 1000000;
 	score = score + probing * 3;
 	score = score + cow * 5;
 	score = score + clone * 8;
