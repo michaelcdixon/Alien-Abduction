@@ -21,7 +21,6 @@
 	<body>
 		<video id="video" autoplay muted loop src="./images/space-background-vid.mp4" type="video/mp4">
 		</video>
-		<audio id="myAudio" autoplay loop src="./sounds/The-X-Files-theme.mp3"></audio>
 		
 		<div class="row">
 			<div class="col-4 display-left">
@@ -118,18 +117,19 @@
 					<div id="colonizeCost" class="col-5 a-m">50,000</div>
 					<div id="colonize" class="col-5 a-r">0</div>
 				</button>
-				<button class="btn-mid btn-icon-eight row r-btn" onclick="buyHarvest()">
+				<!-- Harvest Button -->
+				<button class="btn-mid btn-icon-ten row r-btn" onclick="buyHarvest()">
 					<div class="col-1"></div>
 					<div class="col-5 a-l text">Harvest</div>
-					<div class="col-5 a-m">100,000</div>
-					<div class="col-5 a-r">0</div>
+					<div id="harvestCost" class="col-5 a-m">100,000</div>
+					<div id="harvests" class="col-5 a-r">0</div>
 				</button>
 				<!-- Human Extinction Button -->
-				<button class="btn-mid btn-icon-nine row r-btn" onclick="buyExtinction()">
+				<button class="btn-mid btn-icon-eleven row r-btn" onclick="buyExtinction()">
 					<div class="col-1"></div>
-					<div class="col-5 a-l text">Human Extinction</div>
-					<div class="col-5 a-m">1,000,000</div>
-					<div class="col-5 a-r">0</div>
+					<div class="col-5 a-l text">Extinction</div>
+					<div id="extinctionCost" class="col-5 a-m">1,000,000</div>
+					<div id="extinction" class="col-5 a-r">0</div>
 				</button>
 			</div>
 		</div>

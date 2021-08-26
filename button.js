@@ -133,7 +133,7 @@ function buyColonization() {
 		document.getElementById("colonize").innerHTML = colonization;
 	}
 }
-//MAKING harvest BUTTON WORK
+//MAKING HARVEST BUTTON WORK
 function buyHarvest() {
 	if (score >= harvestCost) {
 		score = score - harvestCost;
@@ -160,12 +160,11 @@ setInterval(function () {
 	document.getElementById("score").innerHTML = score;
 }, 500);
 
-
 //BUTTON CLICK SOUND
-document.onclick = function() {
-	document.getElementById("buttonSound").addEventListener("click",function(){
-		document.getElementById("myAudio").play();
-}
-	) };
-	
-
+document.onclick = function () {
+	document
+		.getElementById("buttonSound")
+		.addEventListener("click", function () {
+			document.getElementById("myAudio").play();
+		});
+};

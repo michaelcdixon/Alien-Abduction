@@ -93,7 +93,7 @@ function loadGame() {
 	console.log(savedGame.abduction);
 }
 
-setInterval(saveGame, 500);
+setInterval(saveGame, 200);
 
 window.onload = function () {
 	loadGame();
