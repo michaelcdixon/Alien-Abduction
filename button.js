@@ -163,7 +163,7 @@ function buyExtinction() {
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
-	score = score + drones * 100000;
+	score = score + drones * 2;
 	score = score + probing * 3;
 	score = score + cow * 5;
 	score = score + clone * 8;
