@@ -141,7 +141,7 @@ function buyColonization() {
 function buyHarvest() {
 	if (score >= harvestCost) {
 		score = score - harvestCost;
-		harvests = harvests = 1;
+		harvests = harvests + 1;
 		harvestCost = Math.round(harvestCost * 1.15);
 		document.getElementById("score").innerHTML = score;
 		document.getElementById("harvestCost").innerHTML = harvestCost;
@@ -163,7 +163,7 @@ function buyExtinction() {
 //SETTING INCREMENTAL POINTS FOR ABDUCTION
 setInterval(function () {
 	score = score + abduction;
-	score = score + drones * 2;
+	score = score + drones * 100000;
 	score = score + probing * 3;
 	score = score + cow * 5;
 	score = score + clone * 8;
